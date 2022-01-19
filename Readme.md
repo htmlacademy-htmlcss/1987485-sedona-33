@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Кадничанский](https://up.htmlacademy.ru/htmlcss/33/user/1987485).
-* Наставник: [Владислав Доровлев] (https://htmlacademy.ru/profile/krivokora).
+* Наставник: [Владислав Доровлев](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
