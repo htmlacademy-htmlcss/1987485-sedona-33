@@ -1,0 +1,249 @@
+@font-face {
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans-400.woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans-700.woff2");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+body {
+	font-family: "PT Sans", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	background-color: #fff;
+}
+
+/*-------------начало index.html------------*/
+.navigation-link {
+	font-family: "PT Sans", sans-serif;
+	line-height: 26px;
+	color: #000000;
+	font-size: 20px;
+	text-align: left;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+.navigation-text-button {
+	text-transform: uppercase;
+}
+
+.logo-item-page {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.logo-comparison {
+	color: #333333;
+	font-size: 22px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.advantages-title {
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #02f860;
+}
+
+.description-services {
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.number {
+	line-height: 21px;
+	font-size: 18px;
+	text-align: center;
+	color: #02f860;
+}
+
+.number-info {
+	color: #333333;
+}
+
+.advantages-item-under {
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #02f860;
+}
+
+.recommendation-text {
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+}
+
+.search-data {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.search-hotel {
+	text-transform: uppercase;
+	text-align: center;
+	color: #02f860;
+	font-size: 20px;
+	line-height: 36px;
+	text-decoration: none;
+}
+
+.email-title {
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #02f860;
+}
+
+.email-info {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #02f860;
+}
+
+.subscribe {
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	color: #02f860;
+}
+
+.footer-contacts-address-phone {
+	color: #000000;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*-------------конец index.html------------*/
+
+/*--------начало catalog.html----------*/
+.inner-header {
+	color: #02f860;
+}
+
+.inner-catalog-title {
+	font-size: 60px;
+	line-height: 78px;
+	text-align: left;
+}
+
+.breadcrumbs-link {
+	text-decoration: none;
+	line-height: 21px;
+	text-align: left;
+}
+
+.inner-config-form {
+	font-size: 20px;
+	line-height: 26px;
+	text-align: left;
+}
+
+.inner-checkbox {
+	font-size: 18px;
+	line-height: 23px;
+	text-align: left;
+}
+
+.inner-buttons-yes {
+	color: #02f860;
+	text-transform: uppercase;
+	line-height: 21px;
+	text-align: center;
+}
+
+.inner-buttons-reset {
+	color: #02f860;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+}
+
+.search-result-title {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 39px;
+	text-align: left;
+}
+/*-----------начало карт----------------------*/
+.product-card-title {
+	font-size: 24px;
+	line-height: 31px;
+	text-align: left;
+}
+
+.product-card-price-hotel {
+	line-height: 23px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.product-card-button {
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #02f860;
+	text-align: center;
+}
+
+.product-card-rating {
+	text-transform: uppercase;
+	line-height: 21px;
+	text-align: center;
+}
+
+.product-card-more {
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	color: #02f860;
+	text-transform: uppercase;
+}
+
+.pagination-number-page {
+	font-size: 18px;
+	line-height: 23px;
+	text-align: left;
+}
+
+.section-footer-title {
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section-footer-text {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.section-footer-subscribe {
+	color: #02f860;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+}
