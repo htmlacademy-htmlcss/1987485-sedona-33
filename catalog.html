@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Каталог</title>
+	<link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -14,13 +15,12 @@
 			<a href=""><img src="images/png/logo.png" width="139" height="70" alt="logo-sedona"></a>
 			<ul class="navigation-list">
 				<li class="navigation-item">
-					<a href="about.html">
+					<a class="navigation-link" href="about.html">
 						Главная
 					</a>
-					<img src="images/svg/Индикатор текущей страницы.svg" width="68" height="1" alt="Индикатор">
 				</li>
 				<li class="navigation-item">
-					<a href="catalog.html">
+					<a class="navigation-link" href="catalog.html">
 						О Седоне
 					</a>
 				</li>
@@ -28,6 +28,7 @@
 					<a class="navigation-link" href="faq.html">
 						Гостиницы
 					</a>
+					<img src="images/svg/Индикатор текущей страницы2.svg" width="93" height="1" alt="Индикатор">
 				</li>
 			</ul>
 
@@ -37,7 +38,7 @@
 
 			<ul class="navigation-list navigation-user">
 				<li class="navigation-item">
-					<a href="#">
+					<a class="navigation-link" href="#">
 						<img src="images/svg/search.svg" width="18" height="17" alt="Поиск">
 						<span class="visually-hidden">
 							Поиск
@@ -45,7 +46,7 @@
 					</a>
 				</li>
 				<li class="navigation-item">
-					<a href="#">
+					<a class="navigation-link" href="#">
 						<img src="images/svg/heart.svg" width="18" height="17" alt="Сердце">
 						<span class="visually-hidden">
 							Корзина
@@ -54,7 +55,7 @@
 				</li>
 				<li class="navigation-item">
 					<a class="navigation-link" href="#">
-						<span>
+						<span class="navigation-text-button">
 							Хочу сюда!
 						</span>
 					</a>
@@ -78,10 +79,14 @@
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-item">
 					<a class="breadcrumbs-link" href="index.html">
+						<img src="images/svg/home.svg" width="12" height="12" alt="home">
 						<span class="visually-hidden">
 							Главная
 						</span>
 					</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<img src="images/svg/arrow.svg" width="5" height="8" alt="arrow">
 				</li>
 				<li class="breadcrumbs-item">
 					<a class="breadcrumbs-link">Гостиницы</a>
@@ -96,15 +101,18 @@
 				<h3 class="inner-config-form">
 					Инфраструктура:
 				</h3>
-				<input class="inner-checkbox" type="checkbox" name="infrastructure" id="pool" value="Бассейн" checked>
+				<input class="inner-checkbox hotel-inner-checkbox" type="checkbox" name="infrastructure" id="pool"
+					value="Бассейн" checked>
 				<label for="pool">
 					Бассейн
 				</label>
-				<input class="inner-checkbox" type="checkbox" name="infrastructure" id="parking" value="Парковка" checked>
+				<input class="inner-checkbox hotel-inner-checkbox" type="checkbox" name="infrastructure" id="parking"
+					value="Парковка" checked>
 				<label for="parking">
 					Парковка
 				</label>
-				<input class="inner-checkbox" type="checkbox" name="infrastructure" id="wi-fi" value="Wi-Fi">
+				<input class="inner-checkbox hotel-inner-checkbox" type="checkbox" name="infrastructure" id="wi-fi"
+					value="Wi-Fi">
 				<label for="wi-fi">
 					Wi-Fi
 				</label>
@@ -117,15 +125,15 @@
 					<h3 class="inner-config-form">
 						Тип жилья:
 					</h3>
-					<label for="hotel-inner">
+					<label class="hotel-inner-checeked inner-checkbox" for="hotel-inner">
 						<input type="radio" name="type" id="hotel-inner" checked>
 						Гостиница
 					</label>
-					<label for="motel">
+					<label class="hotel-inner-checeked inner-checkbox" for="motel">
 						<input tabindex="1" type="radio" name="type" id="motel">
 						Мотель
 					</label>
-					<label for="apartments">
+					<label class="hotel-inner-checeked inner-checkbox" for="apartments">
 						<input type="radio" name="type" id="apartments">
 						Апартаменты
 					</label>
@@ -136,13 +144,13 @@
 				<!------------начало диапозона--------------------->
 				<div class="inner-form inner-range">
 					<div class="half-width">
-						<label for="dayscount">Стоимость, ₽:</label>
+						<label for="inner-config-form dayscount">Стоимость, ₽:</label>
 						<output name="daysoutput"></output>
 						<input type="range" id="dayscount" min="0" max="15000" step="5">
 					</div>
 					<div class="inner-buttons">
-						<button type="submit">Применить</button>
-						<button type="submit">Сбросить</button>
+						<button class="inner-buttons-yes" type="submit">Применить</button>
+						<button class="inner-buttons-reset" type="submit">Сбросить</button>
 					</div>
 				</div>
 				<!------------конец диапозона---------------------->
@@ -200,8 +208,8 @@
 							Amara Resort & Spa
 						</h3>
 					</a>
-					<span class="product-card-hotel">Гостиница</span>
-					<span class="product-card-price">От 4000 ₽</span>
+					<span class="product-card-hotel product-card-price-hotel">Гостиница</span>
+					<span class="product-card-price product-card-price-hotel">От 4000 ₽</span>
 					<a class="product-card-button button" href="#">подробнее</a>
 					<a class="product-card-button button" href="#">В избранное</a>
 					<div>
@@ -218,8 +226,8 @@
 							Desert Quail Inn
 						</h3>
 					</a>
-					<span class="product-card-hotel">Гостиница</span>
-					<span class="product-card-price">От 3000 ₽</span>
+					<span class="product-card-hotel product-card-price-hotel">Гостиница</span>
+					<span class="product-card-price product-card-price-hotel">От 3000 ₽</span>
 					<a class="product-card-button button" href="#">подробнее</a>
 					<a class="product-card-button button" href="#">В избранное</a>
 					<div>
@@ -236,8 +244,8 @@
 							Villas at Poco Diablo
 						</h3>
 					</a>
-					<span class="product-card-hotel">Гостиница</span>
-					<span class="product-card-price">От 2000 ₽</span>
+					<span class="product-card-hotel product-card-price-hotel">Гостиница</span>
+					<span class="product-card-price product-card-price-hotel">От 2000 ₽</span>
 					<a class="product-card-button button" href="#">подробнее</a>
 					<a class="product-card-button button" href="#">В избранное</a>
 					<div>
@@ -254,8 +262,8 @@
 						GreenTree Inn
 					</h3>
 				</a>
-				<span class="product-card-hotel">Гостиница</span>
-				<span class="product-card-price">От 3000 ₽</span>
+				<span class="product-card-hotel product-card-price-hotel">Гостиница</span>
+				<span class="product-card-price product-card-price-hotel">От 3000 ₽</span>
 				<a class="product-card-button button" href="#">подробнее</a>
 				<a class="product-card-button button" href="#">В избранное</a>
 				<div>
