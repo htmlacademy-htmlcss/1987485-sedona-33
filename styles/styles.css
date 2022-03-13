@@ -66,8 +66,15 @@ main {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	width: 450px;
+	width: 400px;
 	list-style-type: none;
+}
+
+.navigation-item {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
 }
 
 .navigation-user .navigation-link {
@@ -76,8 +83,10 @@ main {
 }
 
 .navigation-user {
-	max-width: 300px;
+	display: flex;
+	max-width: 400px;
 	margin-left: auto;
+	justify-content: flex-end;
 }
 
 .navigation-link {
@@ -87,14 +96,25 @@ main {
 	font-size: 20px;
 	font-weight: bold;
 	text-align: left;
-	/*vertical-align: top;*/
 	text-decoration: none;
 	padding: 20px 19px;
 	display: block;
+	justify-content: center;
 }
 
-.navigation-text-button {
+.navigation-link-button {
+	margin-top: 14px;
+	background-color: #756257;
+	border-radius: 4px;
+	width: 160px;
+	height: 25px;
+	padding: 9px 15px 8px;
+	text-align: center;
 	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .page-container-gallery {
@@ -402,30 +422,83 @@ main {
 /*-------------конец index.html------------*/
 
 /*--------начало catalog.html----------*/
+
 .inner-header {
-	color: #02f860;
+	color: #ffffff;
 	width: 1200px;
 	height: 408px;
 	background-image: url("../images/jpg/catalog-background.jpg");
 	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .inner-catalog-title {
 	font-size: 60px;
 	line-height: 78px;
 	text-align: left;
+	width: 528px;
+	height: 68px;
+	padding: 0;
+	margin: 0;
+	margin-top: 35px;
+	margin-left: 71px;
+	max-width: 100%;
+}
+
+.breadcrumbs {
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-top: 8px;
+	margin-left: 61px;
+}
+
+.breadcrumbs-item {
+	margin-left: 10px;
 }
 
 .breadcrumbs-link {
+	font-family: "PT Sans";
 	text-decoration: none;
 	line-height: 21px;
 	text-align: left;
+}
+
+.inner-form {
+	display: flex;
+	width: 100%;
+}
+
+.infrastructure-page {
+	margin-top: 50px;
+	margin-left: 71px;
 }
 
 .inner-config-form {
 	font-size: 20px;
 	line-height: 26px;
 	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+.infrastructure-box {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.inner-checkbox-box {
+	padding: 0;
+	margin: 0;
+	justify-content: start;
+	margin-bottom: 16px;
 }
 
 .inner-checkbox {
@@ -434,18 +507,54 @@ main {
 	text-align: left;
 }
 
+.half-width {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.inner-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	margin-right: 72px;
+	width: 160px;
+}
+
 .inner-buttons-yes {
-	color: #02f860;
+	background-color: #83b3d3;
+	border-radius: 4px;
+	color: #ffffff;
 	text-transform: uppercase;
 	line-height: 21px;
 	text-align: center;
+	padding: 20px 30px;
 }
 
 .inner-buttons-reset {
-	color: #02f860;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 4px;
+	color: #ffffff;
 	font-size: 18px;
 	line-height: 23px;
 	text-align: center;
+	padding: 20px 30px;
+}
+
+.select-control {
+	display: flex;
+	justify-content: space-between;
+	width: 1057px;
+	margin-left: 71px;
+}
+
+.ategory-prices {
+	box-sizing: border-box;
+	width: 287px;
+	height: 48px;
+	margin-top: 25px;
 }
 
 .search-result-title {
@@ -454,11 +563,57 @@ main {
 	line-height: 39px;
 	text-align: left;
 }
+
+.list-view {
+	list-style-type: none;
+	display: flex;
+}
+
+.view {
+	border: #df1212 solid 2px;
+	width: 22px;
+	height: 18px;
+}
 /*-----------начало карт----------------------*/
+
+.product-list {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(3, 340px);
+	margin: 0;
+	padding: 0;
+	gap: 18px;
+	justify-content: center;
+}
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	margin-bottom: 0;
+}
+
+.product-card-link {
+	text-decoration: none;
+	color: #000000;
+}
+
 .product-card-title {
 	font-size: 24px;
 	line-height: 31px;
 	text-align: left;
+}
+
+.product-card-hotel-span {
+	display: flex;
+}
+
+.product-card-hotel {
+	margin-right: auto;
+}
+
+.product-card-price {
+	margin: 0 auto;
 }
 
 .product-card-price-hotel {
@@ -467,31 +622,169 @@ main {
 	text-align: left;
 }
 
+.product-card-button-box {
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+}
+
 .product-card-button {
+	font-family: "PT Sans";
 	line-height: 21px;
 	text-transform: uppercase;
-	color: #02f860;
+	color: #ffffff;
 	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	margin-top: 16px;
+}
+
+.card-button {
+	background-color: #756257;
+	border-radius: 4px;
+	padding: 5px 20px;
+}
+
+.card-button1 {
+	background-color: #83b3d3;
+	border-radius: 4px;
+	padding: 5px 20px;
+}
+
+.card-button-green {
+	background-color: #7db54f;
 }
 
 .product-card-rating {
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	padding: 5px 30px;
 	text-transform: uppercase;
 	line-height: 21px;
 	text-align: center;
 }
 
+.product-card-rating-box {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+
+.imeg-star2 {
+	background-image: url("../images/svg/star.svg");
+	background-repeat: repeat-x;
+	width: 35px;
+}
+
+.imeg-star3 {
+	background-image: url("../images/svg/star.svg");
+	background-repeat: repeat-x;
+	width: 54px;
+}
+
+.imeg-star4 {
+	background-image: url("../images/svg/star.svg");
+	background-repeat: repeat-x;
+	width: 71px;
+}
+
+/*------------конец карт---------------------------*/
+
+.indicator-fon {
+	padding: 0;
+	margin: 34px 72px 0;
+}
+
 .product-card-more {
+	background-color: #83b3d3;
+	border: #00000000;
+	border-radius: 4px;
+	width: 620px;
+	height: 60px;
+	background-position: center;
+	margin: 30px 290px;
+	color: #ffffff;
 	font-size: 20px;
 	line-height: 26px;
-	text-align: center;
-	color: #02f860;
 	text-transform: uppercase;
+}
+
+.indicator-fon2 {
+	padding: 0;
+	margin: 0 72px;
+}
+
+.pagination-page {
+	display: flex;
+	width: 1056px;
+	padding: 0;
+	margin: 30px 72px 0;
+	height: 55px;
+}
+
+.pagination {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-right: auto;
+}
+
+.pagination-item {
+	border-radius: 4px;
+}
+
+.pagination-item:not(:last-child) {
+	margin-right: 8px;
+}
+
+.pagination-item:not(:first-child) {
+	background-color: #83b3d3;
+}
+
+.pagination-current {
+	background-color: #f2f2f2;
+}
+
+.pagination-link {
+	display: block;
+	box-sizing: border-box;
+	width: 55px;
+	height: 55px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 11px;
+}
+
+.pagination-glass {
+	display: flex;
 }
 
 .pagination-number-page {
 	font-size: 18px;
 	line-height: 23px;
 	text-align: left;
+	margin: 12px 0;
+}
+
+.pagination-number {
+	width: 160px;
+	margin-left: 51px;
+	border: #e6e6e6 solid 1px;
+}
+
+.section-footer {
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+	height: 241px;
+	margin: 73px 200px 140px;
 }
 
 .section-footer-title {
