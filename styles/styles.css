@@ -30,7 +30,7 @@ html {
 	height: 100%;
 }
 
-main {
+.main-inner {
 	width: 1200px;
 	margin: 0 auto;
 }
@@ -131,8 +131,8 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
-	margin: 0;
 	min-height: 280px;
+	justify-content: center;
 }
 
 .logo-item {
@@ -142,6 +142,7 @@ main {
 	text-align: center;
 	margin: 63px 240px 0;
 	padding: 0;
+	width: 720px;
 }
 
 .logo-comparison {
@@ -151,6 +152,7 @@ main {
 	text-align: center;
 	margin: 31px 240px 80px;
 	padding: 0;
+	width: 720px;
 }
 
 .title-container {
@@ -158,6 +160,9 @@ main {
 	flex-wrap: wrap;
 	align-items: center;
 	flex-direction: column;
+}
+
+.advantages {
 }
 
 .advantages-title {
@@ -181,6 +186,7 @@ main {
 	margin: 0 auto;
 	padding: 0;
 	list-style-type: none;
+	justify-content: center;
 }
 
 .title-container {
@@ -269,7 +275,6 @@ main {
 }
 
 .search-title {
-	font-family: "PT Sans";
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
@@ -282,7 +287,6 @@ main {
 }
 
 .search-data {
-	font-family: "PT Sans";
 	font-size: 22px;
 	line-height: 26px;
 	text-align: center;
@@ -319,6 +323,7 @@ main {
 	flex-wrap: wrap;
 	flex-direction: column;
 	margin: 0 auto;
+	background-position: center;
 }
 
 .email-page {
@@ -462,7 +467,6 @@ main {
 }
 
 .breadcrumbs-link {
-	font-family: "PT Sans";
 	text-decoration: none;
 	line-height: 21px;
 	text-align: left;
@@ -508,7 +512,6 @@ main {
 }
 
 .half-width {
-	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
@@ -629,7 +632,6 @@ main {
 }
 
 .product-card-button {
-	font-family: "PT Sans";
 	line-height: 21px;
 	text-transform: uppercase;
 	color: #ffffff;
