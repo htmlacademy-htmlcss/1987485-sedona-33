@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>Каталог</title>
 	<link rel="stylesheet" href="styles/styles.css">
-	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico.svg">
 </head>
 
 <body>
@@ -93,7 +93,7 @@
 
 			<!---------началое чекбокса----------------->
 			<h2 class="visually-hidden">Список товара с фильтрами</h2>
-			<form class="inner-form search-config" action="" method="post" oninput="daysoutput.value=dayscount.value">
+			<form class="inner-form search-config" action="url" method="post" oninput="daysoutput.value=dayscount.value">
 				<div class="infrastructure-page">
 					<h3 class="inner-config-form">
 						Инфраструктура:
@@ -160,7 +160,7 @@
 				<!------------начало диапозона--------------------->
 				<div class="inner-form inner-range">
 					<div class="half-width">
-						<label for="inner-config-form dayscount">Стоимость, ₽:</label>
+						<label for="dayscount">Стоимость, ₽:</label>
 						<output name="daysoutput"></output>
 						<input type="range" id="dayscount" min="0" max="15000" step="5">
 					</div>
