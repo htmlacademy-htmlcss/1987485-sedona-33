@@ -77,6 +77,59 @@ html {
 	height: auto;
 }
 
+.underline {
+	position: relative;
+}
+
+.underline-link::after {
+	content: "";
+	border-bottom: 2px solid #756257;
+	width: 68px;
+	position: absolute;
+	margin: 50px 0 0 -68px;
+}
+
+.navigation-item:active {
+	color: #756257;
+	opacity: 0.3;
+}
+
+.navigation-link-hover:hover {
+	color: #756257;
+}
+
+.navigation-link:hover .navigation-icon {
+	fill: #756257;
+}
+
+.navigation-link:focus {
+	border: 3px solid #83b3d3;
+	outline: none;
+}
+
+.position-like {
+	position: relative;
+}
+
+.number-like {
+	display: block;
+	padding-top: 3px;
+}
+
+.like {
+	position: absolute;
+	background: #7db54f;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	left: 30px;
+	top: 10px;
+	font-size: 10px;
+	line-height: 13px;
+	color: #ffffff;
+	text-align: center;
+}
+
 .navigation-user .navigation-link {
 	min-width: 16px;
 	min-height: 22px;
@@ -267,7 +320,6 @@ html {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	height: 417px;
 	padding-top: 91px;
 }
 
@@ -295,8 +347,8 @@ html {
 	background-color: #756257;
 	border-radius: 10px;
 	width: 575px;
-	height: 60px;
 	margin-top: 56px;
+	margin-bottom: 93px;
 }
 
 .search-hotel-button {
@@ -310,6 +362,17 @@ html {
 	box-sizing: border-box;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.search-hotel-button:hover {
+	background: #615048;
+	border-radius: 10px;
+}
+
+.search-hotel-button:active {
+	color: #ffffff;
+	background: #615048;
+	opacity: 0.3;
 }
 
 .email {
@@ -358,7 +421,20 @@ html {
 	height: 60px;
 	background-color: #f2f2f2;
 	border-radius: 10px 0px 0px 10px;
-	border-color: none;
+	border: none;
+}
+
+.email-page-button-submit:hover {
+	background: #e6e6e6;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.email-page-button-submit:focus {
+	background: #e6e6e6;
+	border: 3px solid #83b3d3;
+	border-radius: 10px 0px 0px 10px;
+	outline: none;
+	box-sizing: border-box;
 }
 
 .email-page-button {
@@ -370,14 +446,29 @@ html {
 	height: 60px;
 	background-color: #83b3d3;
 	border-radius: 0px 10px 10px 0px;
-	border-color: none;
-}
-
-.subscribe {
+	border: none;
 	font-size: 20px;
 	line-height: 26px;
 	text-align: center;
 	color: #ffffff;
+	cursor: pointer;
+}
+
+.email-page-button:hover {
+	background: #68a2ca;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.email-page-button:active {
+	color: #ffffff;
+	opacity: 0.3;
+}
+
+.email-page-button:focus {
+	background: #68a2ca;
+	border: 3px solid #756257;
+	border-radius: 0px 10px 10px 0px;
+	outline: none;
 }
 
 .page-footer-container {
@@ -392,15 +483,36 @@ html {
 	flex-wrap: wrap;
 	width: 198px;
 	margin-right: 130px;
-	border: #000000 solid 1px;
+	padding: 35px 0;
+	margin-left: 52px;
 }
 
 .page-network-link {
-	border: #df1212 solid 1px;
 	list-style-type: none;
 	width: 56px;
 	height: 44px;
 	margin-right: 8px;
+}
+
+.fotter-page-network:hover {
+	color: #68a2ca;
+}
+
+.fotter-page-network:focus {
+	color: #68a2ca;
+	border: 3px solid #83b3d3;
+	border-radius: 10px;
+	outline: none;
+}
+
+.page-network-link:active {
+	opacity: 0.3;
+	color: #68a2ca;
+}
+
+.fotter-page-network {
+	color: #83b3d3;
+	padding: 15px 20px;
 }
 
 .page-network-link:nth-child(3n) {
@@ -413,13 +525,52 @@ html {
 	line-height: 40px;
 	text-align: center;
 	text-decoration: none;
-	margin: 0 auto;
-	margin-top: 40px;
+	width: 500px;
+	padding-top: 40px;
+}
+
+.footer-contacts-address-phone:hover {
+	color: #756257;
+}
+
+.footer-contacts-address-phone:focus {
+	border: 3px solid #83b3d3;
+	box-sizing: border-box;
+	border-radius: 10px;
+	outline: none;
+}
+
+.footer-contacts-address-phone:active {
+	color: #756257;
+	opacity: 0.3;
 }
 
 .footer-network-htmlacademy {
 	max-width: 130px;
 	margin-left: auto;
+	padding-right: 75px;
+	padding-top: 42px;
+}
+
+.footer-logo-htmlacademy {
+	color: #000000;
+}
+
+.footer-logo-htmlacademy:hover {
+	fill: #756257;
+}
+
+.footer-logo-htmlacademy:active {
+	fill: #756257;
+	opacity: 0.3;
+}
+
+.footer-network-htmlacademy:focus {
+	border: 3px solid #83b3d3;
+	box-sizing: border-box;
+	border-radius: 10px;
+	fill: #756257;
+	outline: none;
 }
 /*-------------конец index.html------------*/
 
