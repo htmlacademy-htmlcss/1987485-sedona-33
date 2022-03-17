@@ -618,6 +618,17 @@ html {
 	text-decoration: none;
 	line-height: 21px;
 	text-align: left;
+	color: #ffffff;
+}
+
+.breadcrumbs-item:not(:nth-child(2n)):hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs-link:not(:nth-child(2n)):focus {
+	border: 3px solid #83b3d3;
+	border-radius: 4px;
+	outline: none;
 }
 
 .inner-form {
@@ -664,6 +675,64 @@ html {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 26px;
+	margin-top: 50px;
+}
+
+.inner-range {
+	display: flex;
+	flex-direction: column;
+}
+
+.from-befor-box {
+	display: flex;
+}
+
+.from-befor {
+	font-family: "PT Sans" sans-serif;
+	font-size: 18px;
+	line-height: 23px;
+	color: #ffffff;
+	padding-top: 12px;
+	margin-top: 34px;
+}
+
+.from-befor-page {
+	display: flex;
+	justify-content: space-around;
+	border: 2px solid #ffffff;
+	box-sizing: border-box;
+	border-radius: 4px 0 0 4px;
+	width: 143px;
+	height: 48px;
+}
+
+.from-befor-number .from-befor-text {
+	display: block;
+	margin-top: 14px;
+}
+
+.from-befor-text {
+	opacity: 0.3;
+}
+
+.from-befor-list {
+	display: flex;
+	justify-content: space-around;
+	border: 2px solid #ffffff;
+	box-sizing: border-box;
+	border-radius: 0 4px 4px 0;
+	width: 143px;
+	height: 48px;
+}
+
+.scroll-box {
+	width: 287px;
+	height: 20px;
+	margin-top: 20px;
+	background-image: url("..//images/svg/Rectangle34.svg"), url("..//images/svg/Rectangle35.svg"),
+		url("..//images/svg/Line5.svg"), url("..//images/svg/Line4.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0, 80%, 0, 100%;
 }
 
 .inner-buttons {
@@ -671,7 +740,8 @@ html {
 	flex-direction: column;
 	justify-content: end;
 	margin-right: 72px;
-	width: 160px;
+	width: 500px;
+	padding-bottom: 20px;
 }
 
 .inner-buttons-yes {
@@ -681,7 +751,24 @@ html {
 	text-transform: uppercase;
 	line-height: 21px;
 	text-align: center;
-	padding: 20px 30px;
+	height: 48px;
+	border: none;
+	cursor: pointer;
+}
+
+.inner-buttons-yes:active {
+	opacity: 0.3;
+}
+
+.inner-buttons-yes:hover {
+	background: #68a2ca;
+	border-radius: 4px;
+}
+
+.inner-buttons-yes:focus {
+	border: #ffffff solid 2px;
+	border-radius: 4px;
+	outline: auto;
 }
 
 .inner-buttons-reset {
@@ -691,7 +778,22 @@ html {
 	font-size: 18px;
 	line-height: 23px;
 	text-align: center;
-	padding: 20px 30px;
+	height: 48px;
+	border: none;
+	cursor: pointer;
+}
+
+.inner-buttons-reset:hover {
+	opacity: 0.6;
+}
+
+.inner-buttons-reset:active {
+	opacity: 0.3;
+}
+
+.inner-buttons-reset:focus {
+	border: #83b3d3 solid 2px;
+	outline: #83b3d3;
 }
 
 .select-control {
@@ -706,6 +808,28 @@ html {
 	width: 287px;
 	height: 48px;
 	margin-top: 25px;
+	margin-left: 182px;
+	cursor: pointer;
+}
+
+.ategory-prices:hover {
+	border: 2px solid #83b3d3;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.ategory-prices:focus {
+	border: 2px solid #83b3d3;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: #83b3d3;
+}
+
+.ategory-prices:active {
+	opacity: 0.3;
+	border: 2px solid #e6e6e6;
+	box-sizing: border-box;
+	border-radius: 4px;
 }
 
 .search-result-title {
@@ -720,11 +844,35 @@ html {
 	display: flex;
 }
 
+.view:first-child {
+	border: 2px solid #000000;
+}
+
 .view {
-	border: #df1212 solid 2px;
+	border-radius: 4px;
 	width: 22px;
 	height: 18px;
+	padding: 17px;
+	position: relative;
+	margin-right: 8px;
+	border: 2px solid #e6e6e6;
+	cursor: pointer;
 }
+
+.view-slide {
+	color: #000000;
+}
+
+.view:hover {
+	border: 2px solid #83b3d3;
+	border-radius: 4px;
+}
+
+.view:active {
+	border: 2px solid #000000;
+	border-radius: 4px;
+}
+
 /*-----------начало карт----------------------*/
 
 .product-list {
@@ -747,6 +895,20 @@ html {
 .product-card-link {
 	text-decoration: none;
 	color: #000000;
+}
+
+.product-card-image:hover {
+	opacity: 0.6;
+}
+
+.product-card-link:focus {
+	border: 2px solid #83b3d3;
+	outline: none;
+}
+
+.product-card-image:active {
+	opacity: 0.3;
+	border: none;
 }
 
 .product-card-title {
@@ -795,14 +957,57 @@ html {
 	padding: 5px 20px;
 }
 
+.card-button:hover {
+	background: #615048;
+	border-radius: 4px;
+}
+
+.card-button:active {
+	opacity: 0.3;
+	border: none;
+}
+
+.card-button:focus {
+	border: 2px solid #83b3d3;
+	background: #615048;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+}
+
 .card-button1 {
 	background-color: #83b3d3;
 	border-radius: 4px;
 	padding: 5px 20px;
 }
 
+.card-button1:hover {
+	background: #68a2ca;
+}
+
+.card-button1:active {
+	opacity: 0.3;
+	border: none;
+}
+
+.card-button1:focus {
+	border: 2px solid #756257;
+	box-sizing: border-box;
+	border-radius: 4px;
+	outline: none;
+}
+
 .card-button-green {
 	background-color: #7db54f;
+}
+
+.card-button-green:hover {
+	background: #6c9e42;
+}
+
+.card-button-green:active {
+	opacity: 0.3;
+	border: none;
 }
 
 .product-card-rating {
@@ -822,20 +1027,20 @@ html {
 
 .imeg-star2 {
 	background-image: url("../images/svg/star.svg");
-	background-repeat: repeat-x;
-	width: 35px;
+	background-repeat: space;
+	width: 45px;
 }
 
 .imeg-star3 {
 	background-image: url("../images/svg/star.svg");
-	background-repeat: repeat-x;
-	width: 54px;
+	background-repeat: space;
+	width: 70px;
 }
 
 .imeg-star4 {
 	background-image: url("../images/svg/star.svg");
-	background-repeat: repeat-x;
-	width: 71px;
+	background-repeat: space;
+	width: 85px;
 }
 
 /*------------конец карт---------------------------*/
@@ -857,6 +1062,7 @@ html {
 	font-size: 20px;
 	line-height: 26px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .indicator-fon2 {
@@ -892,10 +1098,6 @@ html {
 	background-color: #83b3d3;
 }
 
-.pagination-current {
-	background-color: #f2f2f2;
-}
-
 .pagination-link {
 	display: block;
 	box-sizing: border-box;
@@ -910,6 +1112,13 @@ html {
 	text-transform: uppercase;
 	color: #ffffff;
 	padding: 11px;
+}
+
+.pagination-current {
+	background-color: #f2f2f2;
+	color: #000000;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 .pagination-glass {

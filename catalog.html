@@ -94,7 +94,7 @@
 					<img src="images/svg/arrow.svg" width="5" height="8" alt="arrow">
 				</li>
 				<li class="breadcrumbs-item">
-					<a class="breadcrumbs-link">Гостиницы</a>
+					<a class="breadcrumbs-link" href="index.html">Гостиницы</a>
 				</li>
 			</ul>
 			<!---------конец крошек---------->
@@ -173,6 +173,18 @@
 						<output name="daysoutput"></output>
 						<input type="range" id="dayscount" min="0" max="15000" step="5">
 					</div>
+					<div class="from-befor-box">
+						<div class="from-befor from-befor-page">
+							<span class="from-befor-number">0</span>
+							<span class="from-befor-text">от</span>
+						</div>
+						<div class="from-befor from-befor-list">
+							<span class="from-befor-number">9000</span>
+							<span class="from-befor-text">до</span>
+						</div>
+					</div>
+					<div class="scroll-box">
+					</div>
 				</div>
 				<div class="inner-buttons">
 					<button class="inner-buttons-yes" type="submit">Применить</button>
@@ -200,6 +212,11 @@
 				<ul class="list-view">
 					<li class="view">
 						<a href="#">
+							<svg class="view-slide" aria-hidden="true" focusable="false" width="20" height="20"
+								fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6 3H2v6h4V3ZM18 3h-4v6h4V3ZM12 3H8v6h4V3ZM6 11H2v6h4v-6ZM18 11h-4v6h4v-6ZM12 11H8v6h4v-6Z" />
+							</svg>
 							<span class="visually-hidden">
 								Вид Обычный список
 							</span>
@@ -207,6 +224,10 @@
 					</li>
 					<li class="view">
 						<a href="#">
+							<svg class="view-slide" aria-hidden="true" focusable="false" width="20" height="20"
+								fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 15H2v2h16v-2ZM16 5v6H4V5h12Zm2-2H2v10h16V3Z" />
+							</svg>
 							<span class="visually-hidden">
 								Вид Плитка
 							</span>
@@ -214,6 +235,11 @@
 					</li>
 					<li class="view">
 						<a href="#">
+							<svg class="view-slide" aria-hidden="true" focusable="false" width="20" height="20"
+								fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+							</svg>
 							<span class="visually-hidden">
 								Вид Таблица
 							</span>
