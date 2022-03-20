@@ -38,7 +38,7 @@ html {
 .main-container {
 	flex-grow: 1;
 }
-/*-------------начало index.html------------*/
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -86,7 +86,7 @@ html {
 	border-bottom: 2px solid #756257;
 	width: 68px;
 	position: absolute;
-	margin: 50px 0 0 -68px;
+	margin: 44px 0 0 -68px;
 }
 
 .navigation-item:active {
@@ -150,18 +150,16 @@ html {
 	font-weight: bold;
 	text-align: left;
 	text-decoration: none;
-	padding: 20px 19px;
+	padding: 20px 17px;
 	display: block;
-	justify-content: center;
 }
 
 .navigation-link-button {
 	margin-top: 14px;
 	background-color: #756257;
 	border-radius: 4px;
-	width: 160px;
-	height: 25px;
-	padding: 9px 15px 8px;
+	width: 130px;
+	padding: 7px 15px 8px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -174,10 +172,10 @@ html {
 	width: 1200px;
 	height: 485px;
 	margin: 0 auto;
-	background-image: url("../images/svg/welcome.svg"), url("../images/svg/divider.svg"),
-		url("../images/jpg/gallery.jpg");
+	background-image: url("../images/welcome.svg"), url("../images/divider.svg"), url("../images/gallery.jpg");
 	background-repeat: no-repeat;
-	background-position: center, 0 100%;
+	background-position: 50% 38%, 0 100%;
+	margin-top: -11px;
 }
 
 .title-glass {
@@ -186,6 +184,9 @@ html {
 	padding: 0;
 	min-height: 280px;
 	justify-content: center;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .logo-item {
@@ -223,7 +224,7 @@ html {
 	color: #ffffff;
 	margin: 0;
 	padding: 0;
-	margin-top: 97px;
+	margin-top: 99px;
 }
 
 .advantages-item-under {
@@ -255,13 +256,36 @@ html {
 	margin-top: 89px;
 }
 
+.logo-meal {
+	margin-top: 91px;
+}
+
+.logo-gift {
+	margin-top: 85px;
+}
+
 .description-services {
 	color: #000000;
 	text-transform: uppercase;
 	font-size: 24px;
 	line-height: 28px;
 	text-align: center;
-	margin-top: 23px;
+	margin: 0;
+}
+
+.housing {
+	margin-bottom: 19px;
+	margin-top: 24px;
+}
+
+.meal {
+	margin-bottom: 0;
+	margin-top: 24px;
+}
+
+.souvenir {
+	margin-bottom: 20px;
+	margin-top: 24px;
 }
 
 .number {
@@ -270,7 +294,7 @@ html {
 	text-align: center;
 	color: #ffffff;
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 28px;
 }
 
 .number-info {
@@ -295,6 +319,11 @@ html {
 	margin: 20px 75px 79px;
 }
 
+.recommendation-housing {
+	width: 180px;
+	margin: 0 auto;
+}
+
 .journey {
 	display: flex;
 	flex-wrap: wrap;
@@ -313,7 +342,7 @@ html {
 }
 
 .advantages-description {
-	margin: 30px 75px 108px;
+	margin-top: 30px;
 }
 
 .search-for-hotels {
@@ -339,7 +368,7 @@ html {
 	font-size: 22px;
 	line-height: 26px;
 	text-align: center;
-	margin: 29px 240px 0;
+	margin: 28px 327px 4px 311px;
 }
 
 .search-hotel {
@@ -347,7 +376,7 @@ html {
 	background-color: #756257;
 	border-radius: 10px;
 	width: 575px;
-	margin-top: 56px;
+	margin-top: 46px;
 	margin-bottom: 93px;
 }
 
@@ -360,7 +389,7 @@ html {
 	display: block;
 	margin: 0 auto;
 	box-sizing: border-box;
-	padding-top: 15px;
+	padding-top: 20px;
 	padding-bottom: 15px;
 }
 
@@ -376,7 +405,7 @@ html {
 }
 
 .email {
-	background-image: url("../images/jpg/background.jpg");
+	background-image: url("../images/background.jpg");
 	background-repeat: no-repeat;
 	height: 411px;
 	display: flex;
@@ -388,7 +417,7 @@ html {
 
 .email-page {
 	padding: 0;
-	margin-top: 94px;
+	margin-top: 64px;
 }
 
 .email-title {
@@ -416,7 +445,7 @@ html {
 	display: block;
 	padding: 0;
 	margin: 0;
-	margin-top: 46px;
+	margin-top: 24px;
 	width: 600px;
 	height: 60px;
 	background-color: #f2f2f2;
@@ -439,19 +468,19 @@ html {
 
 .email-page-button {
 	display: block;
-	padding: 0;
 	margin: 0;
-	margin-top: 46px;
+	margin-top: 24px;
 	width: 200px;
-	height: 60px;
 	background-color: #83b3d3;
 	border-radius: 0px 10px 10px 0px;
 	border: none;
-	font-size: 20px;
+	font-size: 17px;
 	line-height: 26px;
 	text-align: center;
+	font-weight: 700;
 	color: #ffffff;
 	cursor: pointer;
+	text-transform: uppercase;
 }
 
 .email-page-button:hover {
@@ -483,15 +512,13 @@ html {
 	flex-wrap: wrap;
 	width: 198px;
 	margin-right: 130px;
-	padding: 35px 0;
+	padding: 30px 0;
 	margin-left: 52px;
 }
 
 .page-network-link {
 	list-style-type: none;
-	width: 56px;
-	height: 44px;
-	margin-right: 8px;
+	width: 43px;
 }
 
 .fotter-page-network:hover {
@@ -525,8 +552,8 @@ html {
 	line-height: 40px;
 	text-align: center;
 	text-decoration: none;
-	width: 500px;
-	padding-top: 40px;
+	width: 441px;
+	padding-top: 35px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -548,8 +575,8 @@ html {
 .footer-network-htmlacademy {
 	max-width: 130px;
 	margin-left: auto;
-	padding-right: 75px;
-	padding-top: 42px;
+	padding-right: 72px;
+	padding-top: 37px;
 }
 
 .footer-logo-htmlacademy {
@@ -572,19 +599,17 @@ html {
 	fill: #756257;
 	outline: none;
 }
-/*-------------конец index.html------------*/
-
-/*--------начало catalog.html----------*/
 
 .inner-header {
 	color: #ffffff;
 	width: 1200px;
 	height: 408px;
-	background-image: url("../images/jpg/catalog-background.jpg");
+	background-image: url("../images/catalog-background.jpg");
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	margin-top: -11px;
 }
 
 .inner-catalog-title {
@@ -606,8 +631,8 @@ html {
 	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
-	margin-top: 8px;
-	margin-left: 61px;
+	margin-top: 2px;
+	margin-left: 64px;
 }
 
 .breadcrumbs-item {
@@ -637,8 +662,21 @@ html {
 }
 
 .infrastructure-page {
-	margin-top: 50px;
-	margin-left: 71px;
+	margin-top: 44px;
+	margin-left: 72px;
+}
+
+.pool-list {
+	font-size: 18px;
+	margin-left: 15px;
+}
+
+.infrastructure-page-typelife {
+	margin-left: 67px;
+}
+
+.inner-checkbox-hotel {
+	margin-left: 14px;
 }
 
 .inner-config-form {
@@ -653,15 +691,11 @@ html {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	padding: 0;
 	margin-top: 30px;
 }
 
 .inner-checkbox-box {
-	padding: 0;
-	margin: 0;
-	justify-content: start;
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 }
 
 .inner-checkbox {
@@ -675,7 +709,8 @@ html {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 26px;
-	margin-top: 50px;
+	margin-top: 44px;
+	margin-left: 4px;
 }
 
 .inner-range {
@@ -693,7 +728,7 @@ html {
 	line-height: 23px;
 	color: #ffffff;
 	padding-top: 12px;
-	margin-top: 34px;
+	margin-top: 35px;
 }
 
 .from-befor-page {
@@ -702,8 +737,9 @@ html {
 	border: 2px solid #ffffff;
 	box-sizing: border-box;
 	border-radius: 4px 0 0 4px;
-	width: 143px;
+	width: 144px;
 	height: 48px;
+	margin-left: 4px;
 }
 
 .from-befor-number .from-befor-text {
@@ -715,13 +751,17 @@ html {
 	opacity: 0.3;
 }
 
+.from-befor-number {
+	margin-right: 30px;
+}
+
 .from-befor-list {
 	display: flex;
 	justify-content: space-around;
 	border: 2px solid #ffffff;
 	box-sizing: border-box;
 	border-radius: 0 4px 4px 0;
-	width: 143px;
+	width: 144px;
 	height: 48px;
 }
 
@@ -729,10 +769,11 @@ html {
 	width: 287px;
 	height: 20px;
 	margin-top: 20px;
-	background-image: url("..//images/svg/Rectangle34.svg"), url("..//images/svg/Rectangle35.svg"),
-		url("..//images/svg/Line5.svg"), url("..//images/svg/Line4.svg");
+	background-image: url("..//images/rectangle-1.svg"), url("..//images/rectangle.svg"), url("..//images/line-5.svg"),
+		url("..//images/line-4.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0, 80%, 0, 100%;
+	background-position: 0, 81%, 0%, 0%;
+	margin-left: 4px;
 }
 
 .inner-buttons {
@@ -741,7 +782,7 @@ html {
 	justify-content: end;
 	margin-right: 72px;
 	width: 500px;
-	padding-bottom: 20px;
+	padding-bottom: 7px;
 }
 
 .inner-buttons-yes {
@@ -775,12 +816,14 @@ html {
 	background-color: rgba(255, 255, 255, 0);
 	border-radius: 4px;
 	color: #ffffff;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 23px;
 	text-align: center;
 	height: 48px;
 	border: none;
 	cursor: pointer;
+	padding-top: 15px;
+	padding-right: 9px;
 }
 
 .inner-buttons-reset:hover {
@@ -805,10 +848,10 @@ html {
 
 .ategory-prices {
 	box-sizing: border-box;
-	width: 287px;
+	width: 286px;
 	height: 48px;
-	margin-top: 25px;
-	margin-left: 182px;
+	margin-top: 45px;
+	margin-left: 100px;
 	cursor: pointer;
 }
 
@@ -837,11 +880,14 @@ html {
 	font-size: 30px;
 	line-height: 39px;
 	text-align: left;
+	padding-top: 23px;
+	width: 400px;
 }
 
 .list-view {
 	list-style-type: none;
 	display: flex;
+	width: 170px;
 }
 
 .view:first-child {
@@ -852,11 +898,14 @@ html {
 	border-radius: 4px;
 	width: 22px;
 	height: 18px;
-	padding: 17px;
-	position: relative;
-	margin-right: 8px;
+	padding: 13px;
 	border: 2px solid #e6e6e6;
 	cursor: pointer;
+	margin-top: 28px;
+	margin-left: 8px;
+}
+
+.view-link {
 }
 
 .view-slide {
@@ -873,8 +922,6 @@ html {
 	border-radius: 4px;
 }
 
-/*-----------начало карт----------------------*/
-
 .product-list {
 	list-style-type: none;
 	display: grid;
@@ -890,6 +937,13 @@ html {
 	flex-direction: column;
 	padding: 20px;
 	margin-bottom: 0;
+	margin-top: 33px;
+}
+
+.product-card-lastcard {
+	margin: 0;
+	padding-top: 0;
+	margin-top: 12px;
 }
 
 .product-card-link {
@@ -915,10 +969,13 @@ html {
 	font-size: 24px;
 	line-height: 31px;
 	text-align: left;
+	margin: 0;
+	margin-top: 10px;
 }
 
 .product-card-hotel-span {
 	display: flex;
+	margin-top: 16px;
 }
 
 .product-card-hotel {
@@ -926,7 +983,7 @@ html {
 }
 
 .product-card-price {
-	margin: 0 auto;
+	margin-right: 64px;
 }
 
 .product-card-price-hotel {
@@ -954,7 +1011,7 @@ html {
 .card-button {
 	background-color: #756257;
 	border-radius: 4px;
-	padding: 5px 20px;
+	padding: 8px 23px;
 }
 
 .card-button:hover {
@@ -978,7 +1035,7 @@ html {
 .card-button1 {
 	background-color: #83b3d3;
 	border-radius: 4px;
-	padding: 5px 20px;
+	padding: 7px 21px;
 }
 
 .card-button1:hover {
@@ -1013,7 +1070,7 @@ html {
 .product-card-rating {
 	background-color: #f2f2f2;
 	border-radius: 4px;
-	padding: 5px 30px;
+	padding: 8px 33px;
 	text-transform: uppercase;
 	line-height: 21px;
 	text-align: center;
@@ -1026,24 +1083,25 @@ html {
 }
 
 .imeg-star2 {
-	background-image: url("../images/svg/star.svg");
+	background-image: url("../images/star.svg");
 	background-repeat: space;
-	width: 45px;
+	width: 43px;
+	margin-top: 10px;
 }
 
 .imeg-star3 {
-	background-image: url("../images/svg/star.svg");
+	background-image: url("../images/star.svg");
 	background-repeat: space;
-	width: 70px;
+	width: 68px;
+	margin-top: 10px;
 }
 
 .imeg-star4 {
-	background-image: url("../images/svg/star.svg");
+	background-image: url("../images/star.svg");
 	background-repeat: space;
-	width: 85px;
+	width: 89px;
+	margin-top: 10px;
 }
-
-/*------------конец карт---------------------------*/
 
 .indicator-fon {
 	padding: 0;
@@ -1057,12 +1115,13 @@ html {
 	width: 620px;
 	height: 60px;
 	background-position: center;
-	margin: 30px 290px;
+	margin: 23px 290px;
 	color: #ffffff;
 	font-size: 20px;
 	line-height: 26px;
 	text-transform: uppercase;
 	cursor: pointer;
+	margin-bottom: 13px;
 }
 
 .indicator-fon2 {
@@ -1074,7 +1133,7 @@ html {
 	display: flex;
 	width: 1056px;
 	padding: 0;
-	margin: 30px 72px 0;
+	margin: 23px 72px 0;
 	height: 55px;
 }
 
@@ -1129,13 +1188,14 @@ html {
 	font-size: 18px;
 	line-height: 23px;
 	text-align: left;
-	margin: 12px 0;
+	margin: 15px 0;
 }
 
 .pagination-number {
 	width: 160px;
 	margin-left: 51px;
 	border: #e6e6e6 solid 1px;
+	border-radius: 4px;
 }
 
 .section-footer {
@@ -1151,6 +1211,7 @@ html {
 	line-height: 36px;
 	text-align: center;
 	text-transform: uppercase;
+	margin-top: 0;
 }
 
 .section-footer-text {
@@ -1165,4 +1226,8 @@ html {
 	font-size: 20px;
 	line-height: 26px;
 	text-align: center;
+}
+
+.page-catalog-footer {
+	margin-top: 5px;
 }
